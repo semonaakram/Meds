@@ -11,8 +11,7 @@ output/*
 # macOS
 .DS_Store
 
-# Logs
-*.log
+
 
 # Backup files
 *~
