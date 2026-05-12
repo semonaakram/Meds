@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+NC="\033[0m"
 set -euo pipefail
 
 FORMAT="text"
@@ -28,7 +30,7 @@ log_verbose() {
 }
 
 error_exit() {
-    echo "[ERROR] $1" >&2
+    echo "${RED}[ERROR] $1${NC}" >&2
     exit 1
 }
 
