@@ -1,0 +1,18 @@
+# Output directory
+output/*
+
+# VSCode
+.vscode/
+
+# Linux temp files
+*.swp
+*.tmp
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Backup files
+*~
