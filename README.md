@@ -1,4 +1,4 @@
-# RISC-V Log Analyzer
+# Advanced RISC-V Log Analyzer
 
 A shell-based tool for analyzing RISC-V simulation log files.
 
