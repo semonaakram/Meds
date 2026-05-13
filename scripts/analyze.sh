@@ -131,7 +131,7 @@ Pass rate:   ${PASS_RATE}%
 
 --- Failed Tests ---
 
-echo "${FAILED_TESTS:-None}"
+${FAILED_TESTS:-None}
 
 --- Timing Statistics ---
 

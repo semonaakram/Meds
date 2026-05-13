@@ -47,12 +47,14 @@ th {
 EOF
 
 for file in test_data/*.log; do
-    if scripts/analyze.sh "$file" > /dev/null 2>&1; then
-        STATUS="PASS"
-        CLASS="pass"
-    else
-        STATUS="FAIL"
-        CLASS="fail"
+    FAIL_COUNT=$(grep -c "TEST FAIL:" "$file" || true)
+
+    if [[ "$FAIL_COUNT" -eq 0 ]]; then
+         STATUS="PASS"
+         CLASS="pass"
+     else
+         STATUS="FAIL"
+         CLASS="fail"
     fi
 
     cat << EOF >> "$REPORT"
